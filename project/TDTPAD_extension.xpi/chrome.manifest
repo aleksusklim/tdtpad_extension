@@ -1,0 +1,2 @@
+content TDTPAD_extension chrome/
+overlay	chrome://browser/content/browser.xul	chrome://TDTPAD_extension/content/TDTPAD_extension.xul

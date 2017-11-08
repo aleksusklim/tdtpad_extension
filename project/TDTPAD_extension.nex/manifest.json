@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"homepage_url": "https://vk.com/TheDoctorTeam",
+	"name": "TDTPAD_extension",
+	"description": "TDTPAD_extension v1.3",
+	"version": "1.3",
+	"icons":{
+		"16":"TDTPAD_extension_16.png",
+		"48":"TDTPAD_extension_48.png",
+		"128":"TDTPAD_extension_128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.piratenpad.de/*"],
+			"js": ["TDTPAD_extension.js"],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"permissions": [
+		"*://*.piratenpad.de/*"
+	]
+}
